@@ -197,7 +197,7 @@ def bucketSort(arr, bucket_size = 5):
 10; 基数排序
 def radixSort(arr):
     size = len(str(max(arr)))
-    buckets = [[] for _ in range(10)]
+    # buckets = [[] for _ in range(10)]  多余的
     
     for i in range(size):
         buckets = [[] for _ in range(10)]
