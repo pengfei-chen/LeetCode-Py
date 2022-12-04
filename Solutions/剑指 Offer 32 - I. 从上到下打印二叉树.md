@@ -1,4 +1,4 @@
-## [剑指 Offer 32 - I. 从上到下打印二叉树](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)
+# [剑指 Offer 32 - I. 从上到下打印二叉树](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)
 
 - 标签：树、广度优先搜索、二叉树
 - 难度：中等
@@ -17,7 +17,7 @@
 
 - 根节点入队。
 - 当队列不为空时，求出当前队列长度 $s_i$。
-	- 依次从队列中取出这 $s_i$ 个元素，将其加入答案数组，并将其左右子节点入队，然后继续迭代。
+    - 依次从队列中取出这 $s_i$ 个元素，将其加入答案数组，并将其左右子节点入队，然后继续迭代。
 - 当队列为空时，结束。
 
 ## 代码

@@ -1,4 +1,4 @@
-## [剑指 Offer II 080. 含有 k 个元素的组合](https://leetcode-cn.com/problems/uUsW3B/)
+# [剑指 Offer II 080. 含有 k 个元素的组合](https://leetcode.cn/problems/uUsW3B/)
 
 - 标签：数组、回溯
 - 难度：中等
@@ -17,9 +17,9 @@
 
 - 如果 `path` 数组的长度等于 `k`，则将 `path` 中的元素加入到 `res` 数组中。
 - 然后对 `[start_index, n]` 范围内的数进行遍历取值。
-	- 将当前元素 `i` 加入 `path` 数组。
-	- 递归遍历 `[start_index, n]` 上的数。
-	- 将遍历的 `i` 元素进行回退。
+    - 将当前元素 `i` 加入 `path` 数组。
+    - 递归遍历 `[start_index, n]` 上的数。
+    - 将遍历的 `i` 元素进行回退。
 - 最终返回 `res` 数组。
 
 ## 代码

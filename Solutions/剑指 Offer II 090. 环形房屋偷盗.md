@@ -1,4 +1,4 @@
-## [剑指 Offer II 090. 环形房屋偷盗](https://leetcode-cn.com/problems/PzWKhm/)
+# [剑指 Offer II 090. 环形房屋偷盗](https://leetcode.cn/problems/PzWKhm/)
 
 - 标签：数组、动态规划
 - 难度：中等
@@ -11,7 +11,7 @@
 
 ## 解题思路
 
-「[剑指 Offer II 089. 房屋偷盗](https://leetcode-cn.com/problems/Gu0c2T/)」的升级版。可以用动态规划来解决问题，关键点在于找到状态转移方程。
+「[剑指 Offer II 089. 房屋偷盗](https://leetcode.cn/problems/Gu0c2T/)」的升级版。可以用动态规划来解决问题，关键点在于找到状态转移方程。
 
 先来考虑最简单的情况。
 
@@ -19,9 +19,9 @@
 
 两间屋子以下，最多只能偷窃一间房屋，则不用考虑首尾相连的情况。如果三个屋子以上，偷窃了第一间房屋，则不能偷窃最后一间房屋。同样偷窃了最后一间房屋则不能偷窃第一间房屋。
 
-假设总共房屋数量为 N，这种情况可以转换为分别求解 $[0, N - 2]$ 和 $[1, N - 1]$ 范围下首尾不相连的房屋所能偷窃的最高金额，这就变成了「[剑指 Offer II 089. 房屋偷盗](https://leetcode-cn.com/problems/Gu0c2T/)」的求解问题。
+假设总共房屋数量为 N，这种情况可以转换为分别求解 $[0, N - 2]$ 和 $[1, N - 1]$ 范围下首尾不相连的房屋所能偷窃的最高金额，这就变成了「[剑指 Offer II 089. 房屋偷盗](https://leetcode.cn/problems/Gu0c2T/)」的求解问题。
 
-「[剑指 Offer II 089. 房屋偷盗](https://leetcode-cn.com/problems/Gu0c2T/)」求解思路如下：
+「[剑指 Offer II 089. 房屋偷盗](https://leetcode.cn/problems/Gu0c2T/)」求解思路如下：
 
 如果房屋大于两间，则偷窃第 `i` 间房屋的时候，就有两种状态：
 
@@ -32,7 +32,7 @@
 
 总结下就是：
 
-$dp[i] = \begin{cases} nums[0], &  i = 0 \\ max( nums[0], nums[1]) & i = 1 \\ max( dp[i-2] + nums[i], dp[i-1]) & i \ge 2 \end{cases}$
+$dp[i] = \begin{cases} nums[0], &  i = 0 \cr max( nums[0], nums[1]) & i = 1 \cr max( dp[i-2] + nums[i], dp[i-1]) & i \ge 2 \end{cases}$
 
 ## 代码
 

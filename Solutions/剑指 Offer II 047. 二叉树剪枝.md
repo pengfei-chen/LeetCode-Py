@@ -1,4 +1,4 @@
-## [剑指 Offer II 047. 二叉树剪枝](https://leetcode-cn.com/problems/pOCWxh/)
+# [剑指 Offer II 047. 二叉树剪枝](https://leetcode.cn/problems/pOCWxh/)
 
 - 标签：树、深度优先搜索、二叉树
 - 难度：中等
@@ -17,7 +17,7 @@
 
 然后递归遍历二叉树，判断当前节点 `root` 是否只包含 `0`。如果只包含 `0`，则将其置空，返回 `None`。否则递归遍历左右子树，并设置对应的左右指针。
 
-最后返回根结点 `root`。
+最后返回根节点 `root`。
 
 ## 代码
 

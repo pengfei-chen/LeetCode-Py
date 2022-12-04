@@ -1,4 +1,4 @@
-## [剑指 Offer II 089. 房屋偷盗](https://leetcode-cn.com/problems/Gu0c2T/)
+# [剑指 Offer II 089. 房屋偷盗](https://leetcode.cn/problems/Gu0c2T/)
 
 - 标签：数组、动态规划
 - 难度：中等
@@ -24,7 +24,7 @@
 
 总结下就是：
 
-$dp[i] = \left\{ \begin{array} {**lr**}  nums[0] & i = 0 \\ max( nums[0], nums[1]) & i = 1 \\ max( dp[i-2] + nums[i], dp[i-1]) & i \ge 2 \end{array} \right.$
+$dp[i] = \begin{cases} \begin{array} {**lr**}  nums[0] & i = 0 \cr max( nums[0], nums[1]) & i = 1 \cr max( dp[i-2] + nums[i], dp[i-1]) & i \ge 2 \end{array} \end{cases}$
 
 ## 代码
 
